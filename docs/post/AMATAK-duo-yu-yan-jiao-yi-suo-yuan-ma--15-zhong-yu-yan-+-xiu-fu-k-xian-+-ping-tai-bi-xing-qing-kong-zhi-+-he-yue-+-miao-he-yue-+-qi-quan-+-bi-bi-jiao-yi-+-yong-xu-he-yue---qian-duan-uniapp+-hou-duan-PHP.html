@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <meta name='google-site-verification' content='QfXznSQKyfOX6Opflyl4ta49_o61cdW5sUm18qJcQq4' />
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="`Gmeek-html<div id='announcement'></div>`
+源码说明
+AMATAK多语言交易所源码/15种语言+修复k线+平台币行情控制+合约+秒合约+期权+币币交易+永续合约/前端uniapp+后端PHP
+
+测试反馈
+测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.3、MySQL5.7，运行目录public，伪静态选择laravel5，建议开启SSL
+
+语言：15种，看图
+
+这套就是BitWell的修复版，主要是修复了k线，现在k线正常启动不会掉线，之前发布的那套程序会存在websocket掉线，导致k线不会实时更新
+
+前后端有一定的调整，注释掉了OTC和矿机的功能，需要的话可以对比之前的版本或者在前端启用
+
+前端h5和pc都是纯源码，后端laravel5框架也是开源的，有完整的代理端，后台可以预设平台币的k线行情，结算这些都没问题
+
+这些交易所有几个php混淆加密后门，都是workerman运行时会执行的，使用批量搜索 ;$b11st=0; 将搜索到的文件打开，把加密的这一段删掉 ;$b11st=0; 开始 ;$b11ed=0; 结束
+主要文件路径如下：
+/vendor/workerman/workerman/Worker.php
+/vendor/laravel/framework/src/Illuminate/Foundation/Application.php
+/vendor/webmsgsender/vendor/workerman/workerman/Worker.php
+
+而且我发现一个非常严重的问题，就是你在很多论坛程序里面搜索 ;$b11st=0; 大多数程序文件都会有（不信你试试），也不知道是哪个傻逼搞的，自己拿到程序还是得先扫几遍在运行，免得网站被上线了
+![image](https://github.com/user-attachments/assets/240a6e48-5d0e-43a6-931b-105e9dda9a0c)
+![image](https://github.com/user-attachments/assets/846a0705-96a0-4a20-bcad-381210d870a9)
+![image](https://github.com/user-attachments/assets/5319ced1-d64d-4609-bd3e-0d6f2213e34f)
+![image](https://github.com/user-attachments/assets/e4502b02-3ada-412c-bad9-9917e9757a50)
+![image](https://github.com/user-attachments/assets/8eb1704f-3d70-48d6-be62-f2dae5d0c819)
+![image](https://github.com/user-attachments/assets/1355a7a1-496d-4480-9afd-aa0f99dd97ad)
+![image](https://github.com/user-attachments/assets/bd67a2c2-b9d2-42f4-9f91-4126bc42c9e0)
+![image](https://github.com/user-attachments/assets/6bfbad1b-6bf9-44cc-bfea-c83bade1c15b)
+![image](https://github.com/user-attachments/assets/83c535b2-6bea-46d7-875e-1e2233180acd)
+![image](https://github.com/user-attachments/assets/4338a163-8e5c-4bc5-8595-36e999163c30)
+![image](https://github.com/user-attachments/assets/e61bdbff-3aa9-44af-9044-ac193480ade9)
+![image](https://github.com/user-attachments/assets/67bdccc9-b26b-410d-8774-406f3d4c2256)
+![image](https://github.com/user-attachments/assets/1164d4ed-c7b4-430e-a45a-f029c9623695)
+![image](https://github.com/user-attachments/assets/fe014c27-bb10-4878-8f6d-761489127689)
+![image](https://github.com/user-attachments/assets/b52ed9bf-79c2-4048-a72a-dc6d7ad65b71)
+![image](https://github.com/user-attachments/assets/f8949987-9edb-46bd-9df5-5a8cd23ddfd9)
+![image](https://github.com/user-attachments/assets/a7a2e2b4-b35e-45e5-9afb-fb11089831df)
+代理端
+![image](https://github.com/user-attachments/assets/3e98c88d-d556-4f4c-aab4-47aae8b386e3)
+![image](https://github.com/user-attachments/assets/ad38e2d6-c4b3-4cd7-b31b-d99c3e19a824)
+![image](https://github.com/user-attachments/assets/15530238-73b1-4797-bb95-bd00d56aea27)
+
+后台
+![image](https://github.com/user-attachments/assets/fbae2a8e-6fb9-425d-a14c-1be55a33031a)
+![image](https://github.com/user-attachments/assets/3722fc25-1f11-4e9b-8781-aa157d9a3c1a)
+![image](https://github.com/user-attachments/assets/8ce71921-cb1a-4161-ad2f-dac33226e448)
+![image](https://github.com/user-attachments/assets/5b7dc3d2-2786-4ed3-b474-5ee4e0a6ea98)
+![image](https://github.com/user-attachments/assets/72e743f3-9390-4726-b610-78a5d75d9a9e)
+![image](https://github.com/user-attachments/assets/7850f190-57e2-4618-a836-50b1a253a1c1)
+![image](https://github.com/user-attachments/assets/7efc0dd8-3025-4bdb-9c24-525103a5ee65)
+![image](https://github.com/user-attachments/assets/e0a03e72-c628-4fa5-833f-57c276c83b1b)
+![image](https://github.com/user-attachments/assets/859c68bc-e573-40ef-997e-9d00690ee390)
+![image](https://github.com/user-attachments/assets/65f991b2-c76a-4654-b8e3-05403c4631f8)
+![image](https://github.com/user-attachments/assets/c1bb226d-fc45-46f6-a050-5915596b7f2b)
+![image](https://github.com/user-attachments/assets/12505947-4a11-47cb-af09-3493eccea93e)
+
+
+
+
+
+
+
+
+
+
+
+。">
+<meta property="og:title" content="AMATAK多语言交易所源码/15种语言+修复k线+平台币行情控制+合约+秒合约+期权+币币交易+永续合约/前端uniapp+后端PHP">
+<meta property="og:description" content="`Gmeek-html<div id='announcement'></div>`
+源码说明
+AMATAK多语言交易所源码/15种语言+修复k线+平台币行情控制+合约+秒合约+期权+币币交易+永续合约/前端uniapp+后端PHP
+
+测试反馈
+测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.3、MySQL5.7，运行目录public，伪静态选择laravel5，建议开启SSL
+
+语言：15种，看图
+
+这套就是BitWell的修复版，主要是修复了k线，现在k线正常启动不会掉线，之前发布的那套程序会存在websocket掉线，导致k线不会实时更新
+
+前后端有一定的调整，注释掉了OTC和矿机的功能，需要的话可以对比之前的版本或者在前端启用
+
+前端h5和pc都是纯源码，后端laravel5框架也是开源的，有完整的代理端，后台可以预设平台币的k线行情，结算这些都没问题
+
+这些交易所有几个php混淆加密后门，都是workerman运行时会执行的，使用批量搜索 ;$b11st=0; 将搜索到的文件打开，把加密的这一段删掉 ;$b11st=0; 开始 ;$b11ed=0; 结束
+主要文件路径如下：
+/vendor/workerman/workerman/Worker.php
+/vendor/laravel/framework/src/Illuminate/Foundation/Application.php
+/vendor/webmsgsender/vendor/workerman/workerman/Worker.php
+
+而且我发现一个非常严重的问题，就是你在很多论坛程序里面搜索 ;$b11st=0; 大多数程序文件都会有（不信你试试），也不知道是哪个傻逼搞的，自己拿到程序还是得先扫几遍在运行，免得网站被上线了
+![image](https://github.com/user-attachments/assets/240a6e48-5d0e-43a6-931b-105e9dda9a0c)
+![image](https://github.com/user-attachments/assets/846a0705-96a0-4a20-bcad-381210d870a9)
+![image](https://github.com/user-attachments/assets/5319ced1-d64d-4609-bd3e-0d6f2213e34f)
+![image](https://github.com/user-attachments/assets/e4502b02-3ada-412c-bad9-9917e9757a50)
+![image](https://github.com/user-attachments/assets/8eb1704f-3d70-48d6-be62-f2dae5d0c819)
+![image](https://github.com/user-attachments/assets/1355a7a1-496d-4480-9afd-aa0f99dd97ad)
+![image](https://github.com/user-attachments/assets/bd67a2c2-b9d2-42f4-9f91-4126bc42c9e0)
+![image](https://github.com/user-attachments/assets/6bfbad1b-6bf9-44cc-bfea-c83bade1c15b)
+![image](https://github.com/user-attachments/assets/83c535b2-6bea-46d7-875e-1e2233180acd)
+![image](https://github.com/user-attachments/assets/4338a163-8e5c-4bc5-8595-36e999163c30)
+![image](https://github.com/user-attachments/assets/e61bdbff-3aa9-44af-9044-ac193480ade9)
+![image](https://github.com/user-attachments/assets/67bdccc9-b26b-410d-8774-406f3d4c2256)
+![image](https://github.com/user-attachments/assets/1164d4ed-c7b4-430e-a45a-f029c9623695)
+![image](https://github.com/user-attachments/assets/fe014c27-bb10-4878-8f6d-761489127689)
+![image](https://github.com/user-attachments/assets/b52ed9bf-79c2-4048-a72a-dc6d7ad65b71)
+![image](https://github.com/user-attachments/assets/f8949987-9edb-46bd-9df5-5a8cd23ddfd9)
+![image](https://github.com/user-attachments/assets/a7a2e2b4-b35e-45e5-9afb-fb11089831df)
+代理端
+![image](https://github.com/user-attachments/assets/3e98c88d-d556-4f4c-aab4-47aae8b386e3)
+![image](https://github.com/user-attachments/assets/ad38e2d6-c4b3-4cd7-b31b-d99c3e19a824)
+![image](https://github.com/user-attachments/assets/15530238-73b1-4797-bb95-bd00d56aea27)
+
+后台
+![image](https://github.com/user-attachments/assets/fbae2a8e-6fb9-425d-a14c-1be55a33031a)
+![image](https://github.com/user-attachments/assets/3722fc25-1f11-4e9b-8781-aa157d9a3c1a)
+![image](https://github.com/user-attachments/assets/8ce71921-cb1a-4161-ad2f-dac33226e448)
+![image](https://github.com/user-attachments/assets/5b7dc3d2-2786-4ed3-b474-5ee4e0a6ea98)
+![image](https://github.com/user-attachments/assets/72e743f3-9390-4726-b610-78a5d75d9a9e)
+![image](https://github.com/user-attachments/assets/7850f190-57e2-4618-a836-50b1a253a1c1)
+![image](https://github.com/user-attachments/assets/7efc0dd8-3025-4bdb-9c24-525103a5ee65)
+![image](https://github.com/user-attachments/assets/e0a03e72-c628-4fa5-833f-57c276c83b1b)
+![image](https://github.com/user-attachments/assets/859c68bc-e573-40ef-997e-9d00690ee390)
+![image](https://github.com/user-attachments/assets/65f991b2-c76a-4654-b8e3-05403c4631f8)
+![image](https://github.com/user-attachments/assets/c1bb226d-fc45-46f6-a050-5915596b7f2b)
+![image](https://github.com/user-attachments/assets/12505947-4a11-47cb-af09-3493eccea93e)
+
+
+
+
+
+
+
+
+
+
+
+。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://6662024.github.io/post/AMATAK-duo-yu-yan-jiao-yi-suo-yuan-ma--15-zhong-yu-yan-%2B-xiu-fu-k-xian-%2B-ping-tai-bi-xing-qing-kong-zhi-%2B-he-yue-%2B-miao-he-yue-%2B-qi-quan-%2B-bi-bi-jiao-yi-%2B-yong-xu-he-yue---qian-duan-uniapp%2B-hou-duan-PHP.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>AMATAK多语言交易所源码/15种语言+修复k线+平台币行情控制+合约+秒合约+期权+币币交易+永续合约/前端uniapp+后端PHP</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">AMATAK多语言交易所源码/15种语言+修复k线+平台币行情控制+合约+秒合约+期权+币币交易+永续合约/前端uniapp+后端PHP</h1>
+<div class="title-right">
+    <a href="https://6662024.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/6662024/6662024.github.io/issues/25" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><div id="announcement"></div><br>
+源码说明<br>
+AMATAK多语言交易所源码/15种语言+修复k线+平台币行情控制+合约+秒合约+期权+币币交易+永续合约/前端uniapp+后端PHP</p>
+<p>测试反馈<br>
+测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.3、MySQL5.7，运行目录public，伪静态选择laravel5，建议开启SSL</p>
+<p>语言：15种，看图</p>
+<p>这套就是BitWell的修复版，主要是修复了k线，现在k线正常启动不会掉线，之前发布的那套程序会存在websocket掉线，导致k线不会实时更新</p>
+<p>前后端有一定的调整，注释掉了OTC和矿机的功能，需要的话可以对比之前的版本或者在前端启用</p>
+<p>前端h5和pc都是纯源码，后端laravel5框架也是开源的，有完整的代理端，后台可以预设平台币的k线行情，结算这些都没问题</p>
+<p>这些交易所有几个php混淆加密后门，都是workerman运行时会执行的，使用批量搜索 ;$b11st=0; 将搜索到的文件打开，把加密的这一段删掉 ;$b11st=0; 开始 ;$b11ed=0; 结束<br>
+主要文件路径如下：<br>
+/vendor/workerman/workerman/Worker.php<br>
+/vendor/laravel/framework/src/Illuminate/Foundation/Application.php<br>
+/vendor/webmsgsender/vendor/workerman/workerman/Worker.php</p>
+<p>而且我发现一个非常严重的问题，就是你在很多论坛程序里面搜索 ;$b11st=0; 大多数程序文件都会有（不信你试试），也不知道是哪个傻逼搞的，自己拿到程序还是得先扫几遍在运行，免得网站被上线了<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/240a6e48-5d0e-43a6-931b-105e9dda9a0c"><img src="https://github.com/user-attachments/assets/240a6e48-5d0e-43a6-931b-105e9dda9a0c" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/846a0705-96a0-4a20-bcad-381210d870a9"><img src="https://github.com/user-attachments/assets/846a0705-96a0-4a20-bcad-381210d870a9" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5319ced1-d64d-4609-bd3e-0d6f2213e34f"><img src="https://github.com/user-attachments/assets/5319ced1-d64d-4609-bd3e-0d6f2213e34f" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e4502b02-3ada-412c-bad9-9917e9757a50"><img src="https://github.com/user-attachments/assets/e4502b02-3ada-412c-bad9-9917e9757a50" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8eb1704f-3d70-48d6-be62-f2dae5d0c819"><img src="https://github.com/user-attachments/assets/8eb1704f-3d70-48d6-be62-f2dae5d0c819" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1355a7a1-496d-4480-9afd-aa0f99dd97ad"><img src="https://github.com/user-attachments/assets/1355a7a1-496d-4480-9afd-aa0f99dd97ad" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/bd67a2c2-b9d2-42f4-9f91-4126bc42c9e0"><img src="https://github.com/user-attachments/assets/bd67a2c2-b9d2-42f4-9f91-4126bc42c9e0" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6bfbad1b-6bf9-44cc-bfea-c83bade1c15b"><img src="https://github.com/user-attachments/assets/6bfbad1b-6bf9-44cc-bfea-c83bade1c15b" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/83c535b2-6bea-46d7-875e-1e2233180acd"><img src="https://github.com/user-attachments/assets/83c535b2-6bea-46d7-875e-1e2233180acd" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/4338a163-8e5c-4bc5-8595-36e999163c30"><img src="https://github.com/user-attachments/assets/4338a163-8e5c-4bc5-8595-36e999163c30" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e61bdbff-3aa9-44af-9044-ac193480ade9"><img src="https://github.com/user-attachments/assets/e61bdbff-3aa9-44af-9044-ac193480ade9" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/67bdccc9-b26b-410d-8774-406f3d4c2256"><img src="https://github.com/user-attachments/assets/67bdccc9-b26b-410d-8774-406f3d4c2256" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1164d4ed-c7b4-430e-a45a-f029c9623695"><img src="https://github.com/user-attachments/assets/1164d4ed-c7b4-430e-a45a-f029c9623695" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fe014c27-bb10-4878-8f6d-761489127689"><img src="https://github.com/user-attachments/assets/fe014c27-bb10-4878-8f6d-761489127689" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b52ed9bf-79c2-4048-a72a-dc6d7ad65b71"><img src="https://github.com/user-attachments/assets/b52ed9bf-79c2-4048-a72a-dc6d7ad65b71" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f8949987-9edb-46bd-9df5-5a8cd23ddfd9"><img src="https://github.com/user-attachments/assets/f8949987-9edb-46bd-9df5-5a8cd23ddfd9" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a7a2e2b4-b35e-45e5-9afb-fb11089831df"><img src="https://github.com/user-attachments/assets/a7a2e2b4-b35e-45e5-9afb-fb11089831df" alt="image" style="max-width: 100%;"></a><br>
+代理端<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3e98c88d-d556-4f4c-aab4-47aae8b386e3"><img src="https://github.com/user-attachments/assets/3e98c88d-d556-4f4c-aab4-47aae8b386e3" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ad38e2d6-c4b3-4cd7-b31b-d99c3e19a824"><img src="https://github.com/user-attachments/assets/ad38e2d6-c4b3-4cd7-b31b-d99c3e19a824" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/15530238-73b1-4797-bb95-bd00d56aea27"><img src="https://github.com/user-attachments/assets/15530238-73b1-4797-bb95-bd00d56aea27" alt="image" style="max-width: 100%;"></a></p>
+<p>后台<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fbae2a8e-6fb9-425d-a14c-1be55a33031a"><img src="https://github.com/user-attachments/assets/fbae2a8e-6fb9-425d-a14c-1be55a33031a" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3722fc25-1f11-4e9b-8781-aa157d9a3c1a"><img src="https://github.com/user-attachments/assets/3722fc25-1f11-4e9b-8781-aa157d9a3c1a" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8ce71921-cb1a-4161-ad2f-dac33226e448"><img src="https://github.com/user-attachments/assets/8ce71921-cb1a-4161-ad2f-dac33226e448" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5b7dc3d2-2786-4ed3-b474-5ee4e0a6ea98"><img src="https://github.com/user-attachments/assets/5b7dc3d2-2786-4ed3-b474-5ee4e0a6ea98" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/72e743f3-9390-4726-b610-78a5d75d9a9e"><img src="https://github.com/user-attachments/assets/72e743f3-9390-4726-b610-78a5d75d9a9e" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7850f190-57e2-4618-a836-50b1a253a1c1"><img src="https://github.com/user-attachments/assets/7850f190-57e2-4618-a836-50b1a253a1c1" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7efc0dd8-3025-4bdb-9c24-525103a5ee65"><img src="https://github.com/user-attachments/assets/7efc0dd8-3025-4bdb-9c24-525103a5ee65" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e0a03e72-c628-4fa5-833f-57c276c83b1b"><img src="https://github.com/user-attachments/assets/e0a03e72-c628-4fa5-833f-57c276c83b1b" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/859c68bc-e573-40ef-997e-9d00690ee390"><img src="https://github.com/user-attachments/assets/859c68bc-e573-40ef-997e-9d00690ee390" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/65f991b2-c76a-4654-b8e3-05403c4631f8"><img src="https://github.com/user-attachments/assets/65f991b2-c76a-4654-b8e3-05403c4631f8" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c1bb226d-fc45-46f6-a050-5915596b7f2b"><img src="https://github.com/user-attachments/assets/c1bb226d-fc45-46f6-a050-5915596b7f2b" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/12505947-4a11-47cb-af09-3493eccea93e"><img src="https://github.com/user-attachments/assets/12505947-4a11-47cb-af09-3493eccea93e" alt="image" style="max-width: 100%;"></a></p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://6662024.github.io">666代下网博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","6662024/6662024.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script src='https://www.666dxw.com/js/ggl.js'></script>
+
+</html>
