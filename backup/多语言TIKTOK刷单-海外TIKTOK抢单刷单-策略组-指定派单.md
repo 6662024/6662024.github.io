@@ -1,0 +1,28 @@
+功能很不错，详细看图，界面简洁，前端是vue的
+`Gmeek-html<div id="announcement"></div>`
+购买请到: https://www.666dxw.com/ 666资源源码代下 **联系客服购买**
+资源编号：**YX47893**
+![image](https://github.com/user-attachments/assets/f27167cd-ab00-430a-9a9c-c67a58700859)
+![image](https://github.com/user-attachments/assets/b2094362-7c5c-41e7-85c9-442b4e2e119e)
+![image](https://github.com/user-attachments/assets/c0e37108-94c7-4ff0-ab88-57d9d1ea2b62)
+![image](https://github.com/user-attachments/assets/ff7e6d71-5d93-430b-be47-97515eb0add3)
+![image](https://github.com/user-attachments/assets/bfe5630c-60a7-4cd9-b8b3-9605433db247)
+![image](https://github.com/user-attachments/assets/e5ed6b59-c4a9-4d3b-b545-9416dc3ec7fc)
+![image](https://github.com/user-attachments/assets/5c7414a8-e72e-4221-a92f-9a7c9ab19910)
+![image](https://github.com/user-attachments/assets/ed0ea634-da6c-471b-81f2-5a0a45b4ed41)
+![image](https://github.com/user-attachments/assets/96e9eb86-82da-46a8-85da-632bfdcdd2bc)
+![image](https://github.com/user-attachments/assets/e21e90e0-ea6d-4352-b24d-f9963b75ca0f)
+![image](https://github.com/user-attachments/assets/dba07b76-c627-4f9d-a833-5914d72f0884)
+![image](https://github.com/user-attachments/assets/9fbc430a-3c89-4ccf-9eac-d6acfb456cf4)
+![image](https://github.com/user-attachments/assets/0b83f761-f0b2-4516-b3ea-d0c940850f8c)
+![image](https://github.com/user-attachments/assets/03238f8d-2e36-429b-8cc2-28b025a139f6)
+![image](https://github.com/user-attachments/assets/e1773dad-acb8-421c-9cb4-ee9ef9bb800e)
+![image](https://github.com/user-attachments/assets/26abf361-f43b-4fad-af6d-4b644d9ed5b2)
+![image](https://github.com/user-attachments/assets/cb272a9a-606b-459c-a9bd-6fa42ffc5974)
+![image](https://github.com/user-attachments/assets/d78912f7-e94b-47a7-a4c4-d0db20785c32)
+![image](https://github.com/user-attachments/assets/6de2ade1-6ad9-4feb-bc59-2eb33a731c5a)
+![image](https://github.com/user-attachments/assets/15c9544f-01c9-4e9b-b012-1644bcf14535)
+![image](https://github.com/user-attachments/assets/9c6227c9-c345-492f-98a7-b5e94eabe7cb)
+![image](https://github.com/user-attachments/assets/2a0667dd-9c7c-4bfe-af29-166f76202402)
+![image](https://github.com/user-attachments/assets/9b28705b-afb0-4685-b645-8b21b5ae4628)
+![image](https://github.com/user-attachments/assets/c71b7db2-4561-4a8d-a457-fb95ccb555b0)
