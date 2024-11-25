@@ -7,6 +7,9 @@
 4.USDT支付，设置汇率，支持市面上各大钱包地址
 
 5.采种可以自由增加
+`Gmeek-html<div id="announcement"></div>`
+购买请到: https://www.666dxw.com/ 666资源源码代下 **联系客服购买**
+资源编号：**FK49106**
 ![image](https://github.com/user-attachments/assets/7397ed6b-89f3-444b-b881-09995d338b99)
 
 ![image](https://github.com/user-attachments/assets/77ece7c5-59b6-4092-8141-02a9deedb9c3)
