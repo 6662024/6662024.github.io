@@ -8,7 +8,7 @@
 
 也是最近比较新奇的玩意，之前很多人都在问这个东西，整体模式也很简单，就只是抢单刷单，前端没有多余的地方
 
-后台可以[定制](https://www.timibbs.net/tag/%e5%ae%9a%e5%88%b6)任务策略，没有插针打针的功能，只有设置任务插入订单
+后台可以定制任务策略，没有插针打针的功能，只有设置任务插入订单
 ![image](https://github.com/user-attachments/assets/0d657d4b-3186-4e3c-b0a7-32c17afd9e58)
 ![image](https://github.com/user-attachments/assets/13375276-a07a-4b13-bd55-05b903138740)
 ![image](https://github.com/user-attachments/assets/3e2fba61-c8a7-472b-affc-3bf02a70c650)
