@@ -1,0 +1,28 @@
+二开的UI有点像之前周大福那套，感觉就是换了后端然后前端也优化了，现在的后端框架是fastadmin，有18种产品，10种语言
+`Gmeek-html<div id="announcement"></div>`
+购买请到: https://www.666dxw.com/ 666资源源码代下 **联系客服购买**
+资源编号：**DM14881**
+![image](https://github.com/user-attachments/assets/e568a076-89dd-44f6-848d-e649de005037)
+![image](https://github.com/user-attachments/assets/c1a398c8-65b3-4355-9b8f-980de4f27585)
+![image](https://github.com/user-attachments/assets/cf80b677-7902-4a84-a42d-bde4dcd42874)
+![image](https://github.com/user-attachments/assets/b22372f5-0e8c-4d8a-967a-3eda0157e68d)
+![image](https://github.com/user-attachments/assets/ec71533b-5f9d-4885-b254-53f800347208)
+![image](https://github.com/user-attachments/assets/6e489480-48c7-4ca1-9289-275fd66d6b2e)
+![image](https://github.com/user-attachments/assets/81e23412-56f7-4498-88c8-4fa156fc5254)
+![image](https://github.com/user-attachments/assets/8fc79e9c-9a6b-4b09-a701-04d31fd0d55a)
+![image](https://github.com/user-attachments/assets/221e4740-4b31-413b-ab75-19b397959f86)
+![image](https://github.com/user-attachments/assets/35f84b5b-a3d6-4c85-8772-6dff8be1ae95)
+![image](https://github.com/user-attachments/assets/0754b268-a8e1-4d95-baaa-1a7422574468)
+![image](https://github.com/user-attachments/assets/eeddeeed-f922-49d6-8524-93db29ba5c31)
+![image](https://github.com/user-attachments/assets/1bcaf1e2-a424-4768-b478-691a3202aedf)
+![image](https://github.com/user-attachments/assets/4f5f07fd-7878-403f-b262-b5745aa04f59)
+![image](https://github.com/user-attachments/assets/3a501168-eab7-4e68-98e9-45bb64eb85a6)
+![image](https://github.com/user-attachments/assets/8accae06-bb87-40a0-b6ed-a9638078adca)
+![image](https://github.com/user-attachments/assets/641810af-ed00-457e-bbf6-4a650a666018)
+![image](https://github.com/user-attachments/assets/5b1b9694-52b4-4a8e-a7c0-8c3eb03c99ea)
+![image](https://github.com/user-attachments/assets/e2d5305d-2080-4e5b-abd8-50d0a867d444)
+![image](https://github.com/user-attachments/assets/d5273a74-6568-45da-97b6-aea9d03116b0)
+![image](https://github.com/user-attachments/assets/fac949f9-f2ed-4983-a77e-1d9a3eee884d)
+![image](https://github.com/user-attachments/assets/112f9465-ec63-4071-bc88-345aae57a7d0)
+![image](https://github.com/user-attachments/assets/78f18673-571e-4986-9663-787a51a0fa5f)
+![image](https://github.com/user-attachments/assets/1950d95a-8580-43ac-8cdd-19d6b22a9e27)
