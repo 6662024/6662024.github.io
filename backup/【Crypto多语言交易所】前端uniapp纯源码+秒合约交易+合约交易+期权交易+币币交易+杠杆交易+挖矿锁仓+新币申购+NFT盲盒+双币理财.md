@@ -1,0 +1,30 @@
+源码说明
+测试环境：Linux系统CentOS7.6、宝塔、PHP7.3、MySQL5.7，根目录public，伪静态laravel5，需开启ssl
+语言：中文繁体、中文简体、英文、法语、西班牙语、韩语、泰语、日语
+这套也是二开过的，客户定制的UI，好不好看得看大家的审美观
+只有手机端uniapp纯源码，没有pc端
+`Gmeek-html<div id="announcement"></div>`
+购买请到: https://www.666dxw.com/ 666资源源码代下 **联系客服购买**
+资源编号：**DM15071**
+源码截图
+![image](https://github.com/user-attachments/assets/96385d94-5510-48bb-91e4-556d849bbb50)
+![image](https://github.com/user-attachments/assets/f4d40cfc-a7f2-457f-b920-c00ad0b29516)
+![image](https://github.com/user-attachments/assets/3fc12c38-9b35-47f5-a94b-226e8cddd8a6)
+![image](https://github.com/user-attachments/assets/8e2383ad-b573-415d-8742-5b25d5dfb398)
+![image](https://github.com/user-attachments/assets/0dd5d2c6-bbad-47fa-82d4-77f1aca59ac2)
+![image](https://github.com/user-attachments/assets/e21588ef-eeb3-4373-8dd0-eb7462a833ac)
+![image](https://github.com/user-attachments/assets/ca77beec-42f5-45fe-a8ec-b5af77543719)
+![image](https://github.com/user-attachments/assets/65275f4e-5e0f-443e-be81-09e41b1d1a11)
+![image](https://github.com/user-attachments/assets/42b2f351-c518-4ae8-8a6d-c4fc1a5a13d7)
+![image](https://github.com/user-attachments/assets/0dd79e4a-47a0-4794-8400-bc03f71dd92c)
+![image](https://github.com/user-attachments/assets/98f0780d-936c-4310-a3e7-34e3264ba567)
+![image](https://github.com/user-attachments/assets/e7ca2d27-3b02-40e2-9440-bcb5643eeac6)
+![image](https://github.com/user-attachments/assets/fcf680f7-b198-4534-94f9-69a2e26d372c)
+![image](https://github.com/user-attachments/assets/63f189e6-5ebf-4da1-92d9-687f221427e9)
+![image](https://github.com/user-attachments/assets/457f0e47-7d6c-4e64-871e-fa542eab6467)
+![image](https://github.com/user-attachments/assets/ceb1a673-6546-4e06-a9f5-cd3f8aea0ff4)
+![image](https://github.com/user-attachments/assets/e53c541a-1342-44fb-be00-47b79e94e846)
+![image](https://github.com/user-attachments/assets/54942e02-33ce-479d-ad17-7848867a405d)
+![image](https://github.com/user-attachments/assets/34e4ac1d-557e-4a5e-a463-a4d77dbcdc78)
+![image](https://github.com/user-attachments/assets/7281c21b-917a-427a-8634-7c62afd62a98)
+![image](https://github.com/user-attachments/assets/2f782db5-5446-493c-a05a-b4399caa8256)
