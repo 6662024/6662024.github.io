@@ -16,14 +16,14 @@
 通过调查，发现以下为严选源码网及其运营者的相关信息：
 
 - **诈骗 Telegram 账号**：  
-  - TG 用户名：@yanxuanw  
+  - TG 用户名：https://t.me/yanxuanw  
   - TG ID：7750441394  
 - **TG 群聊地址**：[https://t.me/yanxuanwcom](https://t.me/yanxuanwcom)  
 
 这些账号及群聊与严选源码网紧密相关，利用社交平台扩大骗局影响。
 
 - **举报人 TG 账号**：  
-  - TG 用户名：@qpalal11  
+  - TG 用户名：https://t.me/qpalal11  
   - TG ID：6607426868  
   - 通过666源码资源代下网 https://www.666dxw.com 群里举报
 ---
