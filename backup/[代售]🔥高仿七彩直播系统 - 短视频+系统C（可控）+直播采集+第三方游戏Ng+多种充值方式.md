@@ -32,7 +32,7 @@
 
 完善的代理分成机制，帮助平台快速拓展市场，实现长期收益增长。
 `Gmeek-html<div id="announcement"></div>`
-购买请到: https://www.666dxw.com/ 666资源源码代下 **联系客服说购买编号：MAO2476**
+购买请到: https://www.666dxw.com/post/46533.html
 资源编号：**MAO2476*
 源码截图
 
